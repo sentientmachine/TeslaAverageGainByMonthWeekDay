@@ -1,4 +1,4 @@
 
-#TeslaAverageGainByMonthWeekDay
+# TeslaAverageGainByMonthWeekDay
 
 
