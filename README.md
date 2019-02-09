@@ -7,6 +7,9 @@ One day I feasted my eyes on this image:
 https://i0.wp.com/lplresearch.com/wp-content/uploads/2019/01/february-can-be-weak-for-stocks.png?ssl=1</a><br>
 <br>
 
-![Alt text](./snp_february_weak_for_stocks.png?raw=true "Is February really weak for stocks or is this image a fake?")
+
+<img border=2 src="https://i0.wp.com/lplresearch.com/wp-content/uploads/2019/01/february-can-be-weak-for-stocks.png?ssl=1" />
+
+BackupImage: ./snp_february_weak_for_stocks.png
 
 
