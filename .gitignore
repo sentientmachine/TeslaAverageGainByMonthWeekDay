@@ -1,0 +1,31 @@
+
+#Never store password files or anything like it.  Career ending stuff bro
+.pgpass
+.my.cnf
+any_password_file
+
+#Never store the .git directory or anything underneath it:
+.git/
+
+#vi stuff, don't commit .swp files, tags files
+*.swp
+tags
+
+#ignore any file ending in .pyc pyo or pyd 
+*.py[cod]
+
+#Sensible Generic stuff, ignore gigantic video files or data csv files
+*.mp4
+*.gif
+*.csv
+
+#.cast files are halfway ascii files that make images.
+*.cast
+
+
+
+__pycache__/
+*$py.class
+
+#ignore any C extensions
+*.so
