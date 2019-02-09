@@ -4,18 +4,27 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
+#1.  Load tsla.csv file
 
+#2.  Have a structure that defines the current lookbehind,  8 through 2 years ago.
 
+#3.  have a structure that gets beginning and end date 2019/01/17 of the group: Month, later (quarter/month/week/day)
+#    Feb:  02/01/yyyy through 02/28/yyyy
+
+#3.  Loop over each year, scan over the lookbehind, over the Average the first half and last half of the group
+#    calculate gain as (new-old)/old and average over all years
+
+#4.  Plunk that final float value in the below table:
 
 
 raw_data = {'month': ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-        '8_yr':      [4,     24,   31,      2,     3,     90,  2, 3, 4, 5, 6, 7],
-        '7_yr':      [25,    94,   57,      62,    70,    100, 2, 3, 4, 5, 6, 7],
-        '6_yr':      [25,    94,   57,      62,    70,    100, 2, 3, 4, 5, 6, 7],
-        '5_yr':      [25,    94,  -57,      62,    70,    100, 2, 3, 4, 5, 6, 7],
-        '4_yr':      [25,    94,  -57,      62,    70,    100, 2, 3, 4, 5, 6, 7],
-        '3_yr':      [25,    94,  -57,      62,    70,    100, 2, 3, 4, -5, 6, 7],
-        '2_yr':      [5,     43,   23,      23,     51,   110, 2, 3, 4, 5, 6, 7]}
+        '8_yr':      [4,     2.4,   3.1,    2,      3,     9.0,  2, 3, 4, 5, 6, 7],
+        '7_yr':      [2.5,   9.4,   5.7,    6.2,   7.0,    1.0,  2, 3, 4, 5, 6, 7],
+        '6_yr':      [2.5,   3.4,   5.7,    6.2,   7.0,    1.0,  2, 3, 4, 5, 6, 7],
+        '5_yr':      [2.5,   8.4,  -5.7,    3.2,   1.0,    1.0,  2, 3, 4, 5, 6, 7],
+        '4_yr':      [2.5,   9.4,  -5.7,    6.2,   7.0,    5.2,  2, 3, 4, 5, 6, 7],
+        '3_yr':      [2.5,   1.4,  -5.7,    0.2,   7.0,    1.0,  2, 3, 4, -5, 6, 7],
+        '2_yr':      [5,     4.3,   2.3,    2.3,   5.1,   2.0,   2, 3, 4, 5, 6, 7]}
 
 df = pd.DataFrame(raw_data, columns = ['month', '8_yr', '7_yr', '6_yr', '5_yr', '4_yr', '3_yr', '2_yr'])
 
@@ -104,13 +113,12 @@ ax.set_xticklabels(df['month'])
 # Setting the x-axis and y-axis limits
 plt.xlim(min(pos)-width, max(pos)+width*4)
 
-
 #hardcode height:
-plt.ylim([-100, max(df['8_yr'] + df['7_yr'] + df['6_yr'])] )
-
+plt.ylim([-12, max(df['8_yr'] + df['7_yr'] + df['6_yr'])] )
 
 # Adding the legend and showing the plot
-plt.legend(['8 year', '7 year', '6 year', '5 year', '4 year', '3 year', '2 year', '1 year'], loc='upper left')
+plt.legend(['8 year', '7 year', '6 year', '5 year', '4 year', '3 year', '2 year', '1 year'], 
+            prop={'size': 8}, loc='upper left')
 plt.grid()
 plt.show()
 
