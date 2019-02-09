@@ -8,12 +8,24 @@ https://i0.wp.com/lplresearch.com/wp-content/uploads/2019/01/february-can-be-wea
 
 <img border=2 src="https://i0.wp.com/lplresearch.com/wp-content/uploads/2019/01/february-can-be-weak-for-stocks.png?ssl=1" />
 
-So I said I should regenerate this from first principles, but for TSLA<br>
+It's a histogram with growth on the vertical and month broken out into 50,20,10 lookbehind groups.<br>
+<br>
 
 Backup image in case it goes down: <a href="./snp_february_weak_for_stocks.png">./snp_february_weak_for_stocks.png</a><br>
 
+The question we want to ask and have the histogram attempt an answer is: 
+
+Assuming all we know about a stock is the current quarter, month, week, or day of the year, then which month,week,day of year ought you to buy the share to maximize gain or loss?  Historically speaking.
+
+Also show trends, for which day/week/month of the year is the most profitable one as time goes on.  
+Does the old adage: "sell in may and walk away" have any merit?
+
 
 ## Data Source:
+
+The nasdaq exchange should be somewhat trustworthy not to fiddle/redact the historical pricing data 
+for self interested reasons, since their profit angle is invester satisfaction with their rigging system
+that allows them to take a cut from every placed bet.<br>
 
 <a href="https://www.nasdaq.com/symbol/tsla/historical">https://www.nasdaq.com/symbol/tsla/historical</a><br>
 
@@ -35,8 +47,13 @@ and library support for financial charting is second to none.  Also there's a bo
 "Python for finance" so there's that.
 
 
+## Make a histogram:
 
+Vertical would be average gain over the group, for the given lookbehind.
 
+Redo this entire charge 4 times, for ( quarter, month, week, day )
+
+Horizontal given lookbehind for each group will be 8,7,6,5,4,3,2,1 years lookbehind.
 
 
 
