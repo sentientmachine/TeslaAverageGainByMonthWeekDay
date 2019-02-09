@@ -4,6 +4,16 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
+
+raw_data = {'month': ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+        '8_yr':      [4,     2.4,   3.1,    2,      3,     9.0,  2, 3, 4, 5, 6, 7],
+        '7_yr':      [2.5,   9.4,   5.7,    6.2,   7.0,    1.0,  2, 3, 4, 5, 6, 7],
+        '6_yr':      [2.5,   3.4,   5.7,    6.2,   7.0,    1.0,  2, 3, 4, 5, 6, 7],
+        '5_yr':      [2.5,   8.4,  -5.7,    3.2,   1.0,    1.0,  2, 3, 4, 5, 6, 7],
+        '4_yr':      [2.5,   9.4,  -5.7,    6.2,   7.0,    5.2,  2, 3, 4, 5, 6, 7],
+        '3_yr':      [2.5,   1.4,  -5.7,    0.2,   7.0,    1.0,  2, 3, 4, -5, 6, 7],
+        '2_yr':      [5,     4.3,   2.3,    2.3,   5.1,   2.0,   2, 3, 4, 5, 6, 7]}
+
 #1.  Load tsla.csv file
 
 #2.  Have a structure that defines the current lookbehind,  8 through 2 years ago.
@@ -17,14 +27,29 @@ import numpy as np
 #4.  Plunk that final float value in the below table:
 
 
-raw_data = {'month': ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-        '8_yr':      [4,     2.4,   3.1,    2,      3,     9.0,  2, 3, 4, 5, 6, 7],
-        '7_yr':      [2.5,   9.4,   5.7,    6.2,   7.0,    1.0,  2, 3, 4, 5, 6, 7],
-        '6_yr':      [2.5,   3.4,   5.7,    6.2,   7.0,    1.0,  2, 3, 4, 5, 6, 7],
-        '5_yr':      [2.5,   8.4,  -5.7,    3.2,   1.0,    1.0,  2, 3, 4, 5, 6, 7],
-        '4_yr':      [2.5,   9.4,  -5.7,    6.2,   7.0,    5.2,  2, 3, 4, 5, 6, 7],
-        '3_yr':      [2.5,   1.4,  -5.7,    0.2,   7.0,    1.0,  2, 3, 4, -5, 6, 7],
-        '2_yr':      [5,     4.3,   2.3,    2.3,   5.1,   2.0,   2, 3, 4, 5, 6, 7]}
+X = load("tsla.csv")
+
+
+for year_lookbehind in [8, 7, 6]:
+
+from  year_lookbehind to 0 years ago
+
+        first_of_month = "get first of month"
+        last_of_month = "get last of month"
+
+asdf
+        
+        gain = calculate_the_gain_for_this_info()
+        raw_data['Jan']['6_yr'] = gain
+
+
+
+
+
+
+
+
+
 
 df = pd.DataFrame(raw_data, columns = ['month', '8_yr', '7_yr', '6_yr', '5_yr', '4_yr', '3_yr', '2_yr'])
 
