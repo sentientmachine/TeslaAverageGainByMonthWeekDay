@@ -7,9 +7,10 @@ any_password_file
 #Never store the .git directory or anything underneath it:
 .git/
 
-#vi stuff, don't commit .swp files, tags files
+#vi stuff, don't commit .swp files, tags files, view files
 *.swp
 tags
+*.view
 
 #ignore any file ending in .pyc pyo or pyd 
 *.py[cod]
