@@ -263,7 +263,7 @@ plt.bar(pos,
         df['9_yr'],
         width,
         alpha=0.5,
-        color='#BE3929',
+        color='#FF2919',
         label=df['month'][0])
 print(type(plt.bar))
 
@@ -273,7 +273,7 @@ plt.bar([p + width for p in pos],
         df['8_yr'],
         width,
         alpha=0.5,
-        color='#F78F1E',
+        color='#FF3F1E',
         label=df['month'][2])
 
 
@@ -319,7 +319,7 @@ plt.bar([p + width*6 for p in pos],
         df['3_yr'],
         width,
         alpha=0.5,
-        color='#BAA233',
+        color='#2AA283',
         label=df['month'][6])
 
 # Create a bar with 2_yr data,
@@ -328,7 +328,7 @@ plt.bar([p + width*7 for p in pos],
         df['2_yr'],
         width,
         alpha=0.5,
-        color='#FAA2FF',
+        color='#2AA2FF',
         label=df['month'][7])
 
 # Set the y axis label
@@ -344,7 +344,7 @@ ax.set_xticks([p + 1.5 * width for p in pos])
 ax.set_xticklabels(df['month'])
 
 # Setting the x-axis and y-axis limits
-plt.xlim(min(pos)-width, max(pos)+width*4)
+plt.xlim(min(pos)-width, max(pos)+width*8)
 
 #hardcode height:
 #plt.ylim([-0.5, max(df['8_yr'] + df['7_yr'] + df['6_yr'])] )
@@ -352,8 +352,8 @@ plt.xlim(min(pos)-width, max(pos)+width*4)
 plt.ylim([-0.08, 0.15] )
 
 # Adding the legend and showing the plot
-plt.legend(['9 year', '8 year', '7 year', '6 year', '5 year', '4 year', '3 year', '2 year'],
-            prop={'size': 8}, loc='upper left')
+plt.legend(['9 year 2011-2019', '8 year 2012-2019', '7 year 2013-2019', '6 year 2014-2019', '5 year 2015-2019', '4 year 2016-2019', '3 year 2017-2019', '2 year 2018-2019'],
+            prop={'size': 16}, loc='upper left')
 plt.grid()
 plt.show()
 
