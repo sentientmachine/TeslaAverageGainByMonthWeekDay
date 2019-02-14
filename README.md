@@ -47,13 +47,6 @@ and library support for financial charting is second to none.  Also there's a bo
 "Python for finance" so there's that.
 
 
-## Make a histogram:
+## Results
 
-Vertical would be average gain over the group, for the given lookbehind.
-
-Redo this entire charge 4 times, for ( quarter, month, week, day )
-
-Horizontal given lookbehind for each group will be 8,7,6,5,4,3,2,1 years lookbehind.
-
-
-![Alt text](./example.png?raw=true "so far so good")
+![Alt text](./final.png?raw=true "so far so good")
