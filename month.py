@@ -133,10 +133,10 @@ def calculate_gain_from_month_and_year(month, year):
     #woah woah, don't look at this backwards, we're looking at the rows top down 
     #which is present -> past, first means top which means present
     startpct = 0.0
-    endpct = 0.3
+    endpct = 0.5
     last_third = get_price_for_month_year(startpct, endpct, month, year)
 
-    startpct = 0.7
+    startpct = 0.5
     endpct = 1.0
     first_third  = get_price_for_month_year(startpct, endpct, month, year)
 
@@ -338,13 +338,13 @@ ax.set_ylabel('Gain')
 ax.set_title('TSLA average Gain by month over lookbehind')
 
 # Set the position of the x ticks
-ax.set_xticks([p + 1.5 * width for p in pos])
+ax.set_xticks([p + 4.5 * width for p in pos])
 
 # Set the labels for the x ticks
 ax.set_xticklabels(df['month'])
 
 # Setting the x-axis and y-axis limits
-plt.xlim(min(pos)-width, max(pos)+width*8)
+plt.xlim(min(pos)-width, max(pos)+width*9)
 
 #hardcode height:
 #plt.ylim([-0.5, max(df['8_yr'] + df['7_yr'] + df['6_yr'])] )
