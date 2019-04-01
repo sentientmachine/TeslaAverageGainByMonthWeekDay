@@ -1,10 +1,14 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 import datetime
 import time
+
+
+# ===== Strategy to approach this problem ==============
 
 #1.  Load tsla.csv file
 
@@ -28,44 +32,58 @@ def open_with_pandas_read_csv(filename):
 
 X = open_with_pandas_read_csv("/home/el/bin/TeslaAverageGainByMonthWeekDay/tsla.csv")
 
-#delete the volume column:
+#delete the volume column, we don't need it.
 X = np.delete(X, [2], 1)
 
-cols = [1, 2, 3, 4]   # columns to calculate average, omit 0 which is date
+cols = [1, 2, 3, 4]   #Use these columns to calculate average, omit 0 which is date
+
+#chop X observations into only the ones we need:
 data = X[:, cols]
 
+#create a new column that is the mean of the open high low close:
 avg_col = data.mean(axis=1)
 
+#delete open high low close, those aren't needed anymore
 truncate_X = np.delete(X, cols, axis=1)
 
-#Concatenate
+#Concatenate our new column to the observations
 X = np.c_[truncate_X, avg_col]
 
 datecol = [0]
+
+#I need a date column to keep track of the month group
 data = X[:, datecol]
 
 def getyear(x):
+    #gets the 4 digit year from the Tesla trading date
     return x[0][0:4]
 
-#months is ones based in python
 def getmonth(x):
+    #gets the 2 digit month from the Tesla trading date
     return x[0][5:7]
+
 def getdayofmonth(x):
+    #gets the 2 digit day of month from the Tesla trading date
     return x[0][8:10]
 
+#Break out year as its own column in the observations
 year_col  = np.apply_along_axis(getyear,  1, data)
+
+#Break out month as its own column in the observations
 month_col = np.apply_along_axis(getmonth, 1, data)
+
+#Break out day of month as its own column in the observations
 day_of_month_col = np.apply_along_axis(getdayofmonth, 1, data)
 
+#Join all the above together into X observations
 X = np.c_[year_col, month_col, day_of_month_col, X]
 X = np.delete(X, [3], axis=1)
 
 
 #1.  Delete the first row regardless if it's a header
-#2.  Delete the second row if it's an intraday row
-#3.  Isolate to only the columns we need:  date, open, high, low, close
-
-#4.  Iterate over every year from 8 to 2  years ago
+#2.  Delete the row if it's an intraday row, the tsla.csv has last day's intraday val, which is silly
+#3.  Isolate to only the columns we need
+#4.  Iterate over every year from 10 to 2 years ago
 #5.  Iterate over every month from January to December
 
 def get_price_for_month_year(startpct, endpct, month, year):
@@ -78,9 +96,6 @@ def get_price_for_month_year(startpct, endpct, month, year):
     for row in X:
         if str(year) == str(row[0]) and int(month) == int(row[1]):
             rows_in_month += 1
-
-    #print("rows_in_month: '" + str(rows_in_month) + "'")
-    #time.sleep(1)
 
     #throw out months with less than 14 days in it
     if rows_in_month < 16:
@@ -100,21 +115,14 @@ def get_price_for_month_year(startpct, endpct, month, year):
                 total_cnt += 1
 
             count_day += 1
-            #time.sleep(0.1)
-            #print(row) 
 
 
     #iterate over each row, 
-
     #If the row is betweeen startpct and endpct then record it
-
-    #get average: of (open, high, low, close) / 4
+    #get the average of (open, high, low, close) / 4
 
     #accumulate total and increment counter
 
-    #print("rows_in_month: '" + str(rows_in_month) + "'")
-    #print("total: '" + str(total) + "'")
-    #time.sleep(0.1)
     try:
         price = float(total) / float(total_cnt)
     except:
@@ -127,11 +135,6 @@ def get_price_for_month_year(startpct, endpct, month, year):
 def calculate_gain_from_month_and_year(month, year):
     #I know concrete year, concrete month, and I have the csv data in X
 
-    #Jan 2005,
-
-
-    #woah woah, don't look at this backwards, we're looking at the rows top down 
-    #which is present -> past, first means top which means present
     startpct = 0.0
     endpct = 0.5
     last_third = get_price_for_month_year(startpct, endpct, month, year)
@@ -142,13 +145,13 @@ def calculate_gain_from_month_and_year(month, year):
 
     #month_data is a list of [ date, open, high,  low,  close ]
 
-    #get first 30% of the data
-    #get the last 30% of the data
+    #To calculate gain: 
+
+    #get first 30% of the data in the month
+    #get the last 30% of the data in the month
     #Get the gain from the first 3rd averaged and the last 3rd averaged
 
-
-
-    #return that
+    #return that gain average
     if (float(first_third) == 0):
         print("There isn't enough data for this year/month")
         return 0
@@ -156,7 +159,6 @@ def calculate_gain_from_month_and_year(month, year):
     else:
         print("year: '" + str(year) + "' first_third: '" + str(first_third) + "' last_third: '" + str(last_third) + "' thegain: '" + str( ((last_third - first_third) / first_third)) + "'")
         return ((last_third - first_third) / first_third)
-
 
 
 def calculate_gain_from_month_and_year_range(month, year_range):
@@ -214,39 +216,24 @@ raw_data = {'month': ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'S
         '2_yr':      [5,     4.3,   2.3,    2.3,   5.1,   2.0,   2, 3, 4, 5, 6, 7]}
 
 print("begin the program")
-#time.sleep(1)
 
 #months is integer, ones based
 for month in ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12']:
-    #print("looking at month " + str(month))
-    #time.sleep(1)
 
     for year_lookbehind in [9, 8, 7, 6, 5, 4, 3, 2]:
 
-        #print("using year_lookbehind: " + str(year_lookbehind))
-        #time.sleep(1)
-
         total_gain = 0
         counter = 0
+
         #go from 2 to n years ago
         int_year_range = range(0, year_lookbehind)
         thisyear_list = [thisyear]*len(int_year_range)
         year_range = [a - b for a, b in zip(thisyear_list, int_year_range)]
         
-        #print("year_range: '" + str(year_range) + "'")
-
         gain = calculate_gain_from_month_and_year_range(month, year_range)
-        #print("gain: '" + str(gain) + "'")
-        #exit()
-        #print("month: '" + str(month) + "'")
-        #print("gain: '" + str(gain) + "'")
-        #print(month_map[int(month)])
-        #print(lookbehind_map[int(year_lookbehind)])
 
         #print(raw_data[lookbehind_map[int(year_lookbehind)]][int(month)-1])
         raw_data[lookbehind_map[int(year_lookbehind)]][int(month)-1] = gain
-
-
 
 
 df = pd.DataFrame(raw_data, columns = ['month', '9_yr', '8_yr', '7_yr', '6_yr', '5_yr', '4_yr', '3_yr', '2_yr'])
