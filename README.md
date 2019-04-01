@@ -42,9 +42,8 @@ Brainstorming, It's a histogram, and based on my experience, 6 languages can do 
 5.  Bash gnuplot, do it for Tux.
 6.  Java Jfreechart.  Just no.
 
-Although I acknowlege that python is for non programmers, and it barely passes the bar for a 
-"programming language" anyhow, the matplotlib data analysis and library support for financial 
-charting is second to none.  
+Python is advertised heavily to non programmers, however, the matplotlib data analysis and library support for financial 
+charting is second to none.  So it gets the job.
 
 
 ## Results
