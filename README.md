@@ -1,7 +1,7 @@
 
 # TeslaAverageGainByMonthWeekDay
 
-Author of this project: Eric Leschinski.
+Sole author of this project for images and code: Eric Leschinski.
 
 Inspired by a snuck glance at a chart from a Bloomberg terminal, I decided to recreate it from first principles in Python2.7 for my favorite company: TSLA.
 
