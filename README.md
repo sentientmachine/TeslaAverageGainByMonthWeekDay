@@ -49,3 +49,7 @@ charting is second to none.  So it gets the job.
 ## Results
 
 ![Alt text](./final.png?raw=true "so far so good")
+
+## The code:
+
+Open <a href="./month.py">month.py</a>
