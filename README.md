@@ -63,15 +63,10 @@ If anything, the new rule of thumb for Tesla stock trading is: "Buy in May, hold
 
 The purpose of this page is to demonstrate my data charting abilities and my skills in translating that into potentially actionable information. 
 
-## Actionable information instructions to use this histogram and profit by this information in May of 2019:
+## Actionable information for May of 2019
 
-If:
+How to use this analysis to potentially profit in May of 2019: If data I downloaded was correct and the histogram analysis made from it tells a correct story, and if the code doesn't have any mathematical errors in conversion to stacked histogram, and if the greater sentiment and ideology of 2019 keeps with the trend over the last decade, and if the hedge funds aren't using this trend as an elaborate mechanism to trap dumb money into taking the wrong end of their trades...
 
-1.  The data I downloaded was correct and the histogram analysis made from it tells a correct story.
-2.  And if the code doesn't have any mathematical errors in conversion to stacked histogram.
-3.  And if the greater sentiment and ideology of 2019 keeps with the trend over the last decade.
-4.  And if the hedge funds aren't using this as an elaborate mechanism to trap dumb money into taking the wrong end of their trades.
+#### Then:
 
-Then:
-
-Load up on Tesla at $235 right now, May 2 2019.  And hold on for exactly 4 weeks, give or take 2 weeks, and sell once all the suited bobbleheads on the big-media feeds say that it's time to load up on Tesla at $350 and $450.  For example like this where the cheeky Billionaire says now is the time for YOU to take the other end of my trade: https://www.youtube.com/watch?v=lx6GJADrflk
+Load up on Tesla at $235 right now, May 1 through May 15, 2019.  And hold on for about 4 weeks, give or take 2 weeks, and sell it all once all the suited bobbleheads on the big-media screens say that NOW is the time to load up on Tesla at $350 and $450.  For example like this video between Chamath Palihaptiya and the journalist where they come to the conclusion that says now is the best time for YOU to take the other end of my stock trade: https://www.youtube.com/watch?v=lx6GJADrflk
