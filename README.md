@@ -69,4 +69,4 @@ How to use this analysis to potentially profit in May of 2019: If data I downloa
 
 #### Then:
 
-Load up on Tesla at $235 right now, May 1 through May 15, 2019.  And hold on for about 4 weeks, give or take 2 weeks, and sell it all once all the suited bobbleheads on the big-media screens say that NOW is the time to load up on Tesla at $350 and $450.  For example like this video between Chamath Palihaptiya and the journalist where they come to the conclusion that says now is the best time for YOU to take the other end of my stock trade: https://www.youtube.com/watch?v=lx6GJADrflk
+Load up on Tesla at $235 right now, May 1 through May 15, 2019.  And hold on for about 4 weeks, give or take 2 weeks, and sell it all once all the suited bobbleheads on the big-media screens get to irrational exuberence and say that NOW is the time for YOU to load up on Tesla at $350.  
