@@ -73,5 +73,4 @@ Load up on Tesla at $235 right now, May 1 through May 15, 2019.  And hold on for
 
 #### Fun commentary:
 
-Corroborating this signal is the hedge funds employing journalists to say that Tesla is dead, April 28 2019: https://www.youtube.com/watch?v=AZRycRUCkdA  When the billionaires are employing journalists to say that Tesla is doomed at 52 week lows, and now is the time to sell your shares to me before it's too late, it means the investment houses are ready to shout: "All hands on deck, man the riggings and ready sails, loose the topsail and jib, tack on my signal... Hard to Starboard!  Trillion dollar vehicles moan under the stress of locking in gains and reconfiguring for the next take.
-
+Corroborating this signal is the hedge funds employing journalists to say that Tesla is dead, April 28 2019: https://www.youtube.com/watch?v=AZRycRUCkdA  When the billionaires are employing journalists to say that Tesla is doomed at 52 week lows, and now is the time to sell your shares to me before it's too late.
