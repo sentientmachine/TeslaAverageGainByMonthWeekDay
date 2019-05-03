@@ -62,3 +62,16 @@ For Tesla, the old adage: "Sell in May and walk away" is not good advice, becaus
 If anything, the new rule of thumb for Tesla stock trading is: "Buy in May, hold for about a month, catch the Tesla's clockwork June gains, then sell at the end of June.
 
 The purpose of this page is to demonstrate my data charting abilities and my skills in translating that into potentially actionable information. 
+
+## Actionable information instructions to use this histogram and profit by this information in May of 2019:
+
+If:
+
+1.  The data I downloaded was correct and the histogram analysis made from it tells a correct story.
+2.  And if the code doesn't have any mathematical errors in conversion to stacked histogram.
+3.  And if the greater sentiment and ideology of 2019 keeps with the trend over the last decade.
+4.  And if the hedge funds aren't using this as an elaborate mechanism to trap dumb money into taking the wrong end of their trades.
+
+Then:
+
+Load up on Tesla at $235 right now, May 2 2019.  And hold on for exactly 4 weeks, give or take 2 weeks, and sell once all the suited bobbleheads on the big-media feeds say that it's time to load up on Tesla at $350 and $450.  For example like this where the cheeky Billionaire says now is the time for YOU to take the other end of my trade: https://www.youtube.com/watch?v=lx6GJADrflk
