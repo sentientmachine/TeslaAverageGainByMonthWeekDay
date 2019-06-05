@@ -71,6 +71,8 @@ How to use this analysis to potentially profit in May of 2019: If data I downloa
 
 Load up on Tesla at $235 right now, May 1 through May 15, 2019.  And hold on for about 4 weeks, give or take 2 weeks, and sell it all once all the suited bobbleheads on the big-media screens get to irrational exuberence and say that NOW is the time for YOU to load up on Tesla at $350.  
 
+Revisit from the future: Looks like there's egg on my face because hedge funds see the same thing we see and hammered the stock down to $180.  Double down for next stop $420!
+
 #### Fun commentary:
 
 Corroborating this signal is the hedge funds employing journalists to say that Tesla is dead, April 28 2019: https://www.youtube.com/watch?v=AZRycRUCkdA  When the billionaires are employing journalists to say that Tesla is doomed at 52 week lows, and now is the time to sell your shares to me before it's too late, then it's time to agree with the lie and do the opposite of what they say.  And hope they're not employing a double or triple reverse psychology.
