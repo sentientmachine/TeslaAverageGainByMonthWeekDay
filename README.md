@@ -12,7 +12,7 @@ https://i0.wp.com/lplresearch.com/wp-content/uploads/2019/01/february-can-be-wea
 
 <img border=2 src="https://i0.wp.com/lplresearch.com/wp-content/uploads/2019/01/february-can-be-weak-for-stocks.png?ssl=1" />
 
-It's a histogram with average percentage growth on the vertical and month broken out into 50,20,10 year lookbehind groups, averaged.  It attempts to answer the question: "Which month is the best month to buy stocks?"<br>
+It's a histogram with average percentage growth on the vertical and month broken out into 50,20,10 year lookbehind groups, averaged.  It attempts to answer the question: "**Which month is the best month to buy stocks?**"<br>
 <br>
 
 Backup image: <a href="./snp_february_weak_for_stocks.png">./snp_february_weak_for_stocks.png</a><br>
