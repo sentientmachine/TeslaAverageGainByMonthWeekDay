@@ -133,10 +133,10 @@ def calculate_gain_from_month_and_year(month, year):
     #woah woah, don't look at this backwards, we're looking at the rows top down 
     #which is present -> past, first means top which means present
     startpct = 0.0
-    endpct = 0.5
+    endpct = 0.2
     last_third = get_price_for_month_year(startpct, endpct, month, year)
 
-    startpct = 0.5
+    startpct = 0.8
     endpct = 1.0
     first_third  = get_price_for_month_year(startpct, endpct, month, year)
 
