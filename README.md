@@ -76,3 +76,12 @@ Revisit from the future: Looks like there's egg on my face because hedge funds s
 #### Fun commentary:
 
 Corroborating this signal is the hedge funds employing journalists to say that Tesla is dead, April 28 2019: https://www.youtube.com/watch?v=AZRycRUCkdA  When the billionaires are employing journalists to say that Tesla is doomed at 52 week lows, and now is the time to sell your shares to me before it's too late, then it's time to agree with the lie and do the opposite of what they say.  And hope they're not employing a double or triple reverse psychology.
+
+
+# Revisit from December 18 2019
+
+You can see I'm not fibbing about any of the preceeding paragraphs because the commit history is confirmed by github.
+
+https://www.youtube.com/watch?v=HMuYfScGpbE
+
+Looks like it's time for a wider house.  `:-D`
