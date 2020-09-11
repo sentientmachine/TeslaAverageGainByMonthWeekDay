@@ -85,3 +85,13 @@ You can see I'm not fibbing about any of the preceeding paragraphs because the c
 https://www.youtube.com/watch?v=HMuYfScGpbE
 
 Looks like it's time for a wider house.  `:-D`
+
+# Revisit from Sept 2020
+
+hashtag angry noises. 
+
+Hindsight is 2020, Tesla went up to $1500/share before the stock split.
+
+Being $60k long Tesla from 200 to 400 and selling off the last of it at 550.  The world isn't fair, they do forget to teach you that in school.
+
+https://www.youtube.com/watch?v=IW19xASnqw8
