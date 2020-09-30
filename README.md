@@ -95,3 +95,7 @@ Hindsight is 2020, Tesla went up to $1500/share before the stock split.
 Being $60k long Tesla from 200 to 400 and selling off the last of it at 550.  The world isn't fair, they do forget to teach you that in school.
 
 https://www.youtube.com/watch?v=IW19xASnqw8
+
+# Revisit from Oct 2020
+
+The same stock experts lifted to the media screens, saying why "Tesla is dead" and destined for $17 a share, back when it was $180 in first quarter 2019, are now dressed to the nines with incredibly comforting pastel primary color back drops, and on the horn enumerating 50 masters degree level psychological reasons as to why NOW is the time for you to buy at `$1500` (up from $180 Q1 2019 pre-split).  Post-split equivalent `($60 -> $500)`.  Somehow a beautiful hybrid between a confidance man, a dark triad and an establishment getting a rake turning a blind eye, is what the world's economy is all about in the first place.  
